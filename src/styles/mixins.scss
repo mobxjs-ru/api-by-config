@@ -1,0 +1,101 @@
+@mixin button {
+  @include body18Regular;
+  border-radius: 32px;
+  padding: 0;
+  height: 48px;
+  line-height: 48px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+  position: relative;
+  flex-shrink: 0;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s;
+  overflow: hidden;
+}
+
+@mixin button-yellow {
+  background: var(--textYellowBrand);
+  color: var(--textMainBlack);
+
+  .ripple {
+    background: var(--bgWhite);
+  }
+
+  &:hover {
+    background: var(--buttonYellowBrandHover);
+  }
+}
+
+@mixin button-grey {
+  background: var(--buttonSecondary);
+  color: var(--textMainBlack);
+
+  .ripple {
+    background: var(--textMainBlack);
+  }
+
+  &:hover {
+    background: var(--buttonSecondaryHover);
+  }
+}
+
+@mixin button-white {
+  background: var(--bgWhite);
+  color: var(--textMainBlack);
+
+  .ripple {
+    background: var(--textMainBlack);
+  }
+
+  &:hover {
+    background: var(--buttonSecondary);
+  }
+}
+
+@mixin button-black {
+  background: var(--buttonBlack);
+  color: var(--bgWhite);
+
+  .ripple {
+    background: var(--bgWhite);
+  }
+
+  &:hover {
+    background: var(--buttonBlackHover);
+  }
+}
+
+@mixin spinner {
+  border: 3px solid transparent;
+  border-top-color: var(--textMainBlack);
+  border-bottom-color: var(--textMainBlack);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+
+  :global {
+    animation: rotating 0.5s linear infinite;
+  }
+}
+
+@mixin body18Regular {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@mixin caption14Regular {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}

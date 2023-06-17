@@ -1,0 +1,24 @@
+@import "mixins.scss";
+
+.app {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 30px auto;
+}
+
+.block {
+  border: 1px solid #ccc;
+  padding: 20px;
+
+  .content {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .button {
+    width: 220px;
+  }
+}

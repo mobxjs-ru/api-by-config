@@ -1,0 +1,220 @@
+@import "mixins.scss";
+
+$padding_horizontal_small: 12px;
+$padding_horizontal_medium: 16px;
+
+$height_small: 32px;
+$height_medium: 48px;
+
+$icon_small: 16px;
+$icon_medium: 24px;
+$icon_large: 32px;
+
+$icon_margin_small: 4px;
+$icon_margin_medium: 8px;
+
+@mixin small() {
+  @include caption14Regular;
+  height: $height_small;
+  line-height: $height_small;
+  padding: 0 $padding_horizontal_small;
+
+  .icon {
+    font-size: $icon_small;
+  }
+
+  .loader {
+    width: $icon_small;
+    height: $icon_small;
+  }
+}
+
+.button {
+  @include button;
+  justify-content: center;
+
+  &.grey {
+    @include button-grey;
+
+    &.active {
+      background: var(--buttonSecondaryPressed);
+    }
+
+    &.disabled {
+      background: var(--buttonSecondary) !important;
+      color: var(--textTertiary) !important;
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+
+  &.white {
+    @include button-white;
+
+    &.active {
+      background: var(--buttonWhitePressed);
+    }
+
+    &.disabled {
+      background: var(--bgWhite) !important;
+      color: var(--textTertiary) !important;
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+
+  &.black {
+    @include button-black;
+
+    &.active {
+      background: var(--buttonBlackPressed);
+    }
+
+    &.disabled {
+      background: var(--buttonSecondary) !important;
+      color: var(--textTertiary) !important;
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+
+  &.yellow {
+    @include button-yellow;
+
+    &.active {
+      background: var(--buttonYellowBrandPressed);
+    }
+
+    &.disabled {
+      background: var(--buttonSecondary) !important;
+      color: var(--textTertiary) !important;
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+
+  &.hasIcon {
+    &.iconLeft {
+      &.small .icon {
+        margin-right: $icon_margin_small;
+      }
+
+      &.medium .icon {
+        margin-right: $icon_margin_medium;
+      }
+    }
+
+    &.iconRight {
+      &.small .icon {
+        margin-left: $icon_margin_small;
+      }
+
+      &.medium .icon {
+        margin-left: $icon_margin_medium;
+      }
+    }
+
+    &.iconBoth {
+      &.small .icon {
+        margin-right: $icon_margin_small;
+
+        ~ .icon {
+          margin-right: 0;
+          margin-left: $icon_margin_small;
+        }
+      }
+
+      &.medium .icon {
+        margin-right: $icon_margin_medium;
+
+        ~ .icon {
+          margin-right: 0;
+          margin-left: $icon_margin_medium;
+        }
+      }
+    }
+
+    &.iconOnly {
+      &.isLoading .icon {
+        display: none;
+      }
+    }
+  }
+
+  &.isSubmit {
+    input {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      padding: 0;
+      display: block;
+      background: none;
+      color: inherit;
+      cursor: inherit;
+      font-size: inherit;
+      text-align: inherit;
+      line-height: inherit;
+      font-weight: inherit;
+      text-transform: inherit;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      border-radius: 32px;
+    }
+  }
+
+  &.small {
+    @include small;
+  }
+
+  &.medium {
+    @include body18Regular;
+    padding: 0 $padding_horizontal_medium;
+    height: $height_medium;
+    line-height: $height_medium;
+
+    .icon {
+      font-size: $icon_medium;
+    }
+
+    .loader {
+      width: $icon_medium;
+      height: $icon_medium;
+    }
+
+    &.smallInMobile {
+      :global(.mobile) & {
+        @include small;
+      }
+    }
+  }
+
+  .icon {
+    vertical-align: middle;
+  }
+
+  > span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .loader {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: $icon_large;
+    transform-origin: center;
+    border: 2px solid;
+    border-color: inherit;
+    border-right-color: transparent;
+
+    :global {
+      animation: rotating 1s linear infinite, fadeIn 0.5s linear;
+    }
+  }
+}
+
+.hidden {
+  position: absolute;
+  right: -999999999px;
+}

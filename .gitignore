@@ -1,0 +1,21 @@
+*.DS_Store
+*.log
+.env
+.idea
+.vscode
+node_modules
+build
+tmp
+.swc
+
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.mobileprovision
+*.orig.*
+
+# macOS
+.DS_Store
+

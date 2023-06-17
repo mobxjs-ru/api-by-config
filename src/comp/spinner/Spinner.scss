@@ -1,0 +1,14 @@
+@import "mixins.scss";
+
+$spinner_outside_color: var(--textMainBlack);
+
+.spinner {
+  border: 3px solid transparent;
+  border-top-color: $spinner_outside_color;
+  border-bottom-color: $spinner_outside_color;
+  border-radius: 50%;
+
+  :global {
+    animation: rotating 0.5s linear infinite;
+  }
+}

@@ -1,0 +1,45 @@
+@import "reset.scss";
+@import "mixins.scss";
+@import "animations.scss";
+
+html,
+body,
+#app {
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Roboto", Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  color: var(--textMainBlack);
+  overflow-x: hidden;
+}
+
+* {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--textMainBlack);
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--bgWhite) inset !important;
+  -webkit-text-fill-color: var(--textMainBlack) !important;
+}
