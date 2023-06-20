@@ -3,12 +3,12 @@ import { Component } from 'react';
 
 import { TypeGlobals } from 'models';
 
-import { StoreContext } from './StoreContext';
+import { GlobalContext } from './GlobalContext';
 
 export class ConnectedComponent<TProps = any> extends Component<TProps, any> {
   // Describe context, so no boilerplate in components needed
   static observer = observer;
   static context: TypeGlobals;
-  static contextType = StoreContext;
+  static contextType = GlobalContext;
   declare context: TypeGlobals;
 }

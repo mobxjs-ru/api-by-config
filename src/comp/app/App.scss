@@ -3,15 +3,16 @@
 .app {
   position: relative;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   margin: 30px auto;
 }
 
 .block {
   border: 1px solid #ccc;
   padding: 20px;
+  width: 300px;
 
   .content {
     margin-top: 20px;
@@ -19,6 +20,6 @@
   }
 
   .button {
-    width: 220px;
+    width: 100%;
   }
 }

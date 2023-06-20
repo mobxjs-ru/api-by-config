@@ -1,5 +1,4 @@
 import { configure } from 'mobx';
-import { errorActionCanceledName } from 'dk-react-mobx-globals';
 
 import { transformers } from 'compSystem/transformers';
 
@@ -17,27 +16,6 @@ function createConsoleJsLogger() {
   };
 }
 
-function replaceOriginalErrorLogger() {
-  if (IS_CLIENT) {
-    // eslint-disable-next-line consistent-return
-    window.addEventListener('unhandledrejection', (e) => {
-      if (e.reason?.name === errorActionCanceledName) {
-        e.preventDefault();
-        return false;
-      }
-    });
-  }
-
-  const originalErrorLogger = console.error;
-  console.error = function consoleErrorCustom(...args: Array<any>) {
-    const errorName = args[0]?.name;
-
-    if (errorName === errorActionCanceledName) return false;
-
-    return originalErrorLogger(...args);
-  };
-}
-
 export function isomorphPolyfills() {
   configure({
     enforceActions: 'always',
@@ -47,5 +25,4 @@ export function isomorphPolyfills() {
     observableRequiresReaction: false,
   });
   createConsoleJsLogger();
-  replaceOriginalErrorLogger();
 }

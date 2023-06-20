@@ -32,9 +32,6 @@ dependencies:
   dk-file-generator:
     specifier: 3.0.9
     version: registry.npmjs.org/dk-file-generator@3.0.9(typescript@5.0.4)
-  dk-react-mobx-globals:
-    specifier: 3.0.9
-    version: registry.npmjs.org/dk-react-mobx-globals@3.0.9(dk-localize@3.0.9)(dk-request@3.0.9)(history@5.3.0)(mobx-react@7.6.0)(mobx@6.9.0)(react@18.2.0)
   dk-reload-server:
     specifier: 3.0.9
     version: registry.npmjs.org/dk-reload-server@3.0.9
@@ -2983,12 +2980,6 @@ packages:
     version: 3.2.4
     dev: false
 
-  registry.npmjs.org/asynckit@0.4.0:
-    resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz}
-    name: asynckit
-    version: 0.4.0
-    dev: false
-
   registry.npmjs.org/at-least-node@1.0.0:
     resolution: {integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/at-least-node/-/at-least-node-1.0.0.tgz}
     name: at-least-node
@@ -3001,18 +2992,6 @@ packages:
     name: available-typed-arrays
     version: 1.0.5
     engines: {node: '>= 0.4'}
-
-  registry.npmjs.org/axios@1.4.0:
-    resolution: {integrity: sha512-S4XCWMEmzvo64T9GfvQDOXgYRDJ/wsSZc7Jvdgx5u1sd0JwsuPLqb3SYmusag+edF6ziyMensPVqLTSc1PiSEA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/axios/-/axios-1.4.0.tgz}
-    name: axios
-    version: 1.4.0
-    dependencies:
-      follow-redirects: registry.npmjs.org/follow-redirects@1.15.2
-      form-data: registry.npmjs.org/form-data@4.0.0
-      proxy-from-env: registry.npmjs.org/proxy-from-env@1.1.0
-    transitivePeerDependencies:
-      - debug
-    dev: false
 
   registry.npmjs.org/babel-plugin-polyfill-corejs2@0.3.3(@babel/core@7.20.12):
     resolution: {integrity: sha512-8hOdmFYFSZhqg2C/JgLUQ+t52o5nirNwaWM2B9LWteozwIvM14VSwdsCAUET10qT+kmySAlseadmfeeSWFCy+Q==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/babel-plugin-polyfill-corejs2/-/babel-plugin-polyfill-corejs2-0.3.3.tgz}
@@ -3555,15 +3534,6 @@ packages:
     resolution: {integrity: sha512-3tlv/dIP7FWvj3BsbHrGLJ6l/oKh1O3TcgBqMn+yyCagOxc23fyzDS6HypQbgxWbkpDnf52p1LuR4eWDQ/K9WQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/colorette/-/colorette-2.0.19.tgz}
     name: colorette
     version: 2.0.19
-
-  registry.npmjs.org/combined-stream@1.0.8:
-    resolution: {integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz}
-    name: combined-stream
-    version: 1.0.8
-    engines: {node: '>= 0.8'}
-    dependencies:
-      delayed-stream: registry.npmjs.org/delayed-stream@1.0.0
-    dev: false
 
   registry.npmjs.org/commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/commander/-/commander-2.20.3.tgz}
@@ -4153,13 +4123,6 @@ packages:
       has-property-descriptors: registry.npmjs.org/has-property-descriptors@1.0.0
       object-keys: registry.npmjs.org/object-keys@1.1.1
 
-  registry.npmjs.org/delayed-stream@1.0.0:
-    resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/delayed-stream/-/delayed-stream-1.0.0.tgz}
-    name: delayed-stream
-    version: 1.0.0
-    engines: {node: '>=0.4.0'}
-    dev: false
-
   registry.npmjs.org/depd@2.0.0:
     resolution: {integrity: sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/depd/-/depd-2.0.0.tgz}
     name: depd
@@ -4196,15 +4159,6 @@ packages:
       serve-static: registry.npmjs.org/serve-static@1.15.0
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  registry.npmjs.org/dk-checker-remove-extraneous@3.0.9:
-    resolution: {integrity: sha512-OLch2wP8zlbb0oCLYGqx71gXyq7AgJCukjut3BEWWklNCKu7ctPmCnAkXKqxu/2nALEI4ToDuZR9+i0pdSiBAg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/dk-checker-remove-extraneous/-/dk-checker-remove-extraneous-3.0.9.tgz}
-    name: dk-checker-remove-extraneous
-    version: 3.0.9
-    dependencies:
-      lodash.get: registry.npmjs.org/lodash.get@4.4.2
-      lodash.unset: registry.npmjs.org/lodash.unset@4.5.2
     dev: false
 
   registry.npmjs.org/dk-compare-env@3.0.9:
@@ -4266,33 +4220,6 @@ packages:
       typescript: registry.npmjs.org/typescript@5.0.4
     dev: false
 
-  registry.npmjs.org/dk-localize@3.0.9:
-    resolution: {integrity: sha512-/RoFuKaumrOYH35245/sdfC9MxH3Xe/VTDbnnMyAyPPy1zMPy6QRdH1+NGwogn5PC/+qMeAC8ldBxr+9nOH5bg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/dk-localize/-/dk-localize-3.0.9.tgz}
-    name: dk-localize
-    version: 3.0.9
-    dev: false
-
-  registry.npmjs.org/dk-react-mobx-globals@3.0.9(dk-localize@3.0.9)(dk-request@3.0.9)(history@5.3.0)(mobx-react@7.6.0)(mobx@6.9.0)(react@18.2.0):
-    resolution: {integrity: sha512-3KrsXiMIyN7XIMEerQ7dkx4LhNjODI34VtkIUXRJ2HbQqywGYZnVLm4FwdDeIDOtHpSNB/6EchjOcWDg69nJxA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/dk-react-mobx-globals/-/dk-react-mobx-globals-3.0.9.tgz}
-    id: registry.npmjs.org/dk-react-mobx-globals/3.0.9
-    name: dk-react-mobx-globals
-    version: 3.0.9
-    peerDependencies:
-      dk-localize: '*'
-      dk-request: '*'
-      history: '*'
-      mobx: '*'
-      mobx-react: '*'
-      react: '*'
-    dependencies:
-      dk-localize: registry.npmjs.org/dk-localize@3.0.9
-      dk-request: registry.npmjs.org/dk-request@3.0.9(ts-interface-checker@1.0.2)
-      history: registry.npmjs.org/history@5.3.0
-      mobx: registry.npmjs.org/mobx@6.9.0
-      mobx-react: registry.npmjs.org/mobx-react@7.6.0(mobx@6.9.0)(react-dom@18.2.0)(react@18.2.0)
-      react: registry.npmjs.org/react@18.2.0
-    dev: false
-
   registry.npmjs.org/dk-reload-server@3.0.9:
     resolution: {integrity: sha512-+4MlVb4fuHJJrsUzWrP694wxEqLTAaZurSjhCsSV9DTs/p9UXwXTE0qijk9iqCdEi6AM005iN+JuUaAPc6lpOg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/dk-reload-server/-/dk-reload-server-3.0.9.tgz}
     name: dk-reload-server
@@ -4305,21 +4232,6 @@ packages:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
-    dev: false
-
-  registry.npmjs.org/dk-request@3.0.9(ts-interface-checker@1.0.2):
-    resolution: {integrity: sha512-SbGGOm+Nc6s2i4WwHCV1TmSkwh5cC4D8h1pLZ2qwa03tllapdzyIV43BLjv1/5az+IpnIzkT/pSLYzTNfF3wBg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/dk-request/-/dk-request-3.0.9.tgz}
-    id: registry.npmjs.org/dk-request/3.0.9
-    name: dk-request
-    version: 3.0.9
-    peerDependencies:
-      ts-interface-checker: '*'
-    dependencies:
-      axios: registry.npmjs.org/axios@1.4.0
-      dk-checker-remove-extraneous: registry.npmjs.org/dk-checker-remove-extraneous@3.0.9
-      ts-interface-checker: registry.npmjs.org/ts-interface-checker@1.0.2
-    transitivePeerDependencies:
-      - debug
     dev: false
 
   registry.npmjs.org/dk-webpack-config@2.4.2(@swc/core@1.3.40):
@@ -5410,35 +5322,12 @@ packages:
     version: 3.2.7
     dev: true
 
-  registry.npmjs.org/follow-redirects@1.15.2:
-    resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.2.tgz}
-    name: follow-redirects
-    version: 1.15.2
-    engines: {node: '>=4.0'}
-    peerDependencies:
-      debug: '*'
-    peerDependenciesMeta:
-      debug:
-        optional: true
-    dev: false
-
   registry.npmjs.org/for-each@0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/for-each/-/for-each-0.3.3.tgz}
     name: for-each
     version: 0.3.3
     dependencies:
       is-callable: registry.npmjs.org/is-callable@1.2.7
-
-  registry.npmjs.org/form-data@4.0.0:
-    resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/form-data/-/form-data-4.0.0.tgz}
-    name: form-data
-    version: 4.0.0
-    engines: {node: '>= 6'}
-    dependencies:
-      asynckit: registry.npmjs.org/asynckit@0.4.0
-      combined-stream: registry.npmjs.org/combined-stream@1.0.8
-      mime-types: registry.npmjs.org/mime-types@2.1.35
-    dev: false
 
   registry.npmjs.org/forwarded@0.2.0:
     resolution: {integrity: sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/forwarded/-/forwarded-0.2.0.tgz}
@@ -6852,12 +6741,6 @@ packages:
     version: 4.0.8
     dev: false
 
-  registry.npmjs.org/lodash.get@4.4.2:
-    resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/lodash.get/-/lodash.get-4.4.2.tgz}
-    name: lodash.get
-    version: 4.4.2
-    dev: false
-
   registry.npmjs.org/lodash.memoize@4.1.2:
     resolution: {integrity: sha512-t7j+NzmgnQzTAYXcsHYLgimltOV1MXHtlOWf6GjL9Kj8GK5FInw5JotxvbOs+IvV1/Dzo04/fCGfLVs7aXb4Ag==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/lodash.memoize/-/lodash.memoize-4.1.2.tgz}
     name: lodash.memoize
@@ -6886,12 +6769,6 @@ packages:
     resolution: {integrity: sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/lodash.uniq/-/lodash.uniq-4.5.0.tgz}
     name: lodash.uniq
     version: 4.5.0
-    dev: false
-
-  registry.npmjs.org/lodash.unset@4.5.2:
-    resolution: {integrity: sha512-bwKX88k2JhCV9D1vtE8+naDKlLiGrSmf8zi/Y9ivFHwbmRfA8RxS/aVJ+sIht2XOwqoNr4xUPUkGZpc1sHFEKg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/lodash.unset/-/lodash.unset-4.5.2.tgz}
-    name: lodash.unset
-    version: 4.5.2
     dev: false
 
   registry.npmjs.org/lodash@4.17.21:
@@ -8504,12 +8381,6 @@ packages:
     dependencies:
       forwarded: registry.npmjs.org/forwarded@0.2.0
       ipaddr.js: registry.npmjs.org/ipaddr.js@1.9.1
-    dev: false
-
-  registry.npmjs.org/proxy-from-env@1.1.0:
-    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz}
-    name: proxy-from-env
-    version: 1.1.0
     dev: false
 
   registry.npmjs.org/pseudomap@1.0.2:
